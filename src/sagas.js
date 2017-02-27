@@ -10,7 +10,7 @@ function* sagasInit () {
 	let state = yield select();
 
 	const initSagas = yield call(api.initSagasAPI);
-	debugger;
+
 	yield put({
 		type: actions.SAGAS_INITIALIZATION,
 		initSagas
